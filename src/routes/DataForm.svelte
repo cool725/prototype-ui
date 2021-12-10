@@ -363,98 +363,20 @@
 
 <script>
     let formType = 'createTable'
-    let table1 = `[
-    {
+    let table1 = `{
         "schema": "_onetoone",
-        "name": "owner",
-        "type": "BASE TABLE"
-    },
-    {
+        "table_name": "owner",
+        "column_name": "id",
+        "data_type": "integer",
+        "default": "nextval('_onetoone.owner_id_seq'::regclass)",
+        "is_nullable": "false"
+    }   `
+    let table2 = `{
         "schema": "_onetoone",
-        "name": "passport_info",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_manytomany",
-        "name": "article",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_manytomany",
-        "name": "article_tag",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_manytomany",
-        "name": "tag",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_groupagg",
-        "name": "author",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_groupagg",
-        "name": "article",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_groupagg",
-        "name": "author_average_rating",
-        "type": "VIEW"
-    },
-    {
-        "schema": "_groupagg",
-        "name": "search_articles",
-        "type": "FUNCTION"
-    }
-]`
-    let table2 = `[
-    {
-        "schema": "_onetoone",
-        "name": "owner",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_onetoone",
-        "name": "passport_info",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_manytomany",
-        "name": "article",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_manytomany",
-        "name": "article_tag",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_manytomany",
-        "name": "tag",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_groupagg",
-        "name": "author",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_groupagg",
-        "name": "article",
-        "type": "BASE TABLE"
-    },
-    {
-        "schema": "_groupagg",
-        "name": "author_average_rating",
-        "type": "VIEW"
-    },
-    {
-        "schema": "_groupagg",
-        "name": "search_articles",
-        "type": "FUNCTION"
-    }
-]`
+        "table_name": "owner",
+        "column_name": "name",
+        "data_type": "text",
+        "default": "NULL",
+        "is_nullable": "false"
+    }`
 </script>
