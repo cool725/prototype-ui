@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+html {
+    font-size: 13px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply flex items-center h-8 px-2 font-semibold text-white bg-blue-600 border border-blue-800 rounded shadow-sm bg-gradient-to-t from-blue-700 to-blue-600 hover:shadow focus:outline-none focus:bg-gradient-to-t focus:from-blue-700 focus:to-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-blue-300;
+    }
+    .btn-default {
+        @apply flex h-8 py-0 px-2 font-semibold items-center text-gray-900 bg-gray-50 bg-gradient-to-t from-gray-100 to-white border border-gray-400 rounded shadow-sm hover:shadow focus:outline-none focus:bg-gradient-to-t focus:from-gray-100 focus:to-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-blue-300;
+    }
+    .btn-outline {
+        @apply flex h-8 py-0 px-2 font-semibold items-center text-gray-900 bg-transparent border border-gray-300 rounded hover:border-gray-400 focus:outline-none focus:bg-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-blue-300;
+    }
+    .input-base{
+        @apply block w-full h-8 px-2 py-0 border border-gray-400 rounded shadow-sm hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-600;
+    }
+}
+
+
+.CodeMirror {
+    height: 100% !important;
+}
+.codemirror-readonly > .CodeMirror * .CodeMirror-cursor{
+    display: none;
+}
