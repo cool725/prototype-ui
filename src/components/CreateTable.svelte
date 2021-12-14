@@ -101,6 +101,7 @@
         <div class="p-2 space-y-2 rounded border border-gray-400 mb-2">
           <p class="font-bold">Primary Keys</p>
           {#each $storeColumnsForCreate as column}
+            {#if column.alterColumnStatus === 'add' }
             <div class="flex items-center">
               <input
                 type="checkbox"
@@ -109,6 +110,7 @@
               />
               <p class="">{column.column_name === '' ? 'Column Name' : column.column_name}</p>
             </div>
+            {/if}
           {/each}
         </div>
       {/if}
