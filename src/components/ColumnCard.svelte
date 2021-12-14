@@ -42,7 +42,11 @@
         bind:value={objAttributes.column_name}
       />
       {:else}
-      <select class="input-base mb-3" bind:value={objAttributes.column_name}>
+      <select
+        class="input-base mb-3"
+        bind:value={objAttributes.column_name}
+        on:input={handleChange}
+      >
         <option selected disabled value="">Column...</option>
         <option>Column_1</option>
         <option>Column_2</option>
