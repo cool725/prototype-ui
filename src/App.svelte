@@ -7,8 +7,16 @@
 
 <main class="flex flex-col h-screen text-gray-900 antialiased">
   <Router primary={false}>
-    <Route path="/"> <Home /> </Route>
-    <Route path="/graphql"> <Graphql /> </Route>
-    <Route path="/dataform"> <DataForm /> </Route>
+    <Route path="/">
+      <DataForm />
+    </Route>
+
+    <Route path="/graphql">
+      <Graphql />
+    </Route>
+    
+    <Route path="/home">
+      <Home />
+    </Route>
   </Router>  
 </main>
