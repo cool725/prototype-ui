@@ -30,3 +30,15 @@ html {
 .codemirror-readonly > .CodeMirror * .CodeMirror-cursor{
     display: none;
 }
+
+.basis-50 {
+    flex-basis: 50%;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.bg-pink-50  {
+    background-color: rgb(253 242 248); 
+}
